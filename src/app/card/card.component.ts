@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-card',
@@ -6,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./card.component.css'],
 })
 export class CardComponent implements OnInit {
+  faTimes=faTimes;
+  faCheck=faCheck;
   @Input('common') common;
   @Input('item') item;
   constructor() {}

@@ -10,7 +10,6 @@ export class AppComponent {
   common={
     higlight:"Unlimited",
     period:"/month",
-    
   }
   arr=[{
     tier:"free",

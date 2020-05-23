@@ -8,18 +8,18 @@
               <li >
               <span [ngSwitch]="item.tier">
                     <span *ngSwitchCase="'free'">
-                             <span *ngIf="free(item,i); else elseBlock"> <span class="fa-li" ><i class="fas fa-times"></i></span></span>    
-                             <ng-template #elseBlock><span class="fa-li" ><i class="fas fa-check"></i></span></ng-template>
+                             <span *ngIf="free(item,i); else elseBlock"><fa-icon [icon]="faTimes"></fa-icon></span>    
+                             <ng-template #elseBlock><fa-icon [icon]="faCheck"></fa-icon></ng-template>
                              <span [ngClass]="textMuted(item,i)">{{listItem}}</span>
                     </span>
                     <span *ngSwitchCase="'Plus'">
-                             <span *ngIf="plus(item,i); else elseBlock"> <span class="fa-li" ><i class="fas fa-times"></i></span></span>    
-                            <ng-template #elseBlock><span class="fa-li" ><i class="fas fa-check"></i></span></ng-template>
+                             <span *ngIf="plus(item,i); else elseBlock"> <fa-icon [icon]="faTimes"></fa-icon></span>    
+                            <ng-template #elseBlock><fa-icon [icon]="faCheck"></fa-icon></ng-template>
                             <span [ngClass]="textMuted(item,i)">{{listItem}}</span>
                     </span>
                      <span *ngSwitchCase="'Pro'">
-                             <span *ngIf="plus(item,i); else elseBlock"> <span class="fa-li" ><i class="fas fa-times"></i></span></span>    
-                            <ng-template #elseBlock><span class="fa-li" ><i class="fas fa-check"></i></span></ng-template>
+                             <span *ngIf="plus(item,i); else elseBlock"><fa-icon [icon]="faTimes"></fa-icon></span>    
+                            <ng-template #elseBlock><fa-icon [icon]="faCheck"></fa-icon></ng-template>
                             <span>{{listItem}}</span>
                     </span>
 
@@ -29,6 +29,4 @@
             <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
           </div>
         </div>
-   <!--<span class="fa-li"><i class="fas fa-check"></i></span> tick
-   <span class="fa-li"><i class="fas fa-times"></i></span> cross
-   class="text-muted"-->
+ 
